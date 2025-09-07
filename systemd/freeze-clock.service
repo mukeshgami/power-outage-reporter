@@ -1,0 +1,11 @@
+[Unit]
+Description=Freeze Clock - Save Time Every Second
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/power-monitor/freeze_clock.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
