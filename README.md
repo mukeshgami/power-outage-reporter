@@ -106,7 +106,7 @@ sqlite3 /var/lib/power-monitor/clock.db "SELECT * FROM outages ORDER BY id DESC 
 
 ## 📧 Example Email
 
-![Example Email](https://dummyimage.com/600x400/f6f8fa/333&text=Power+Outage+Report+Template)
+<img width="679" height="545" alt="power_outage_mail_sample" src="https://github.com/user-attachments/assets/2890ca0f-0eb8-47d9-a507-e799625a8861" />
 
 ---
 
