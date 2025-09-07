@@ -29,7 +29,7 @@ Clone this repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/power-outage-reporter.git
 cd power-outage-reporter
-Update your email-id (Recever mail-id) in scripts/report_power_outage_sqlite.sh file
+Update your email-id (Receiver mail-id) in scripts/report_power_outage_sqlite.sh file
 ```
 
 Run the installer script:
