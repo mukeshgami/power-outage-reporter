@@ -1,12 +1,14 @@
 [Unit]
-Description=Report Power Outage on Reboot
+Description=Report Power Loss Based on SQLite Frozen Clock
 After=network-online.target
-Wants=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+Before=freeze-clock.service
 
 [Service]
 Type=oneshot
 ExecStart=/usr/local/bin/power-monitor/report_power_outage_sqlite.sh
-User=root
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
